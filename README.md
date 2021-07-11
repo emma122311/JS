@@ -20,8 +20,8 @@ word-break: break-all
 </script>
 //參照樂瑞的detail.html
 ```
-```
 調整文本編輯器內圖片按比例縮放
+```
 1.在檔案置底處新增如下js,在所要放置處帶入 dropcap 
 2.參考貝若國際中的課程詳情頁course_next
 <script>
