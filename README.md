@@ -20,3 +20,30 @@ word-break: break-all
 </script>
 //參照樂瑞的detail.html
 ```
+```
+調整文本編輯器內圖片按比例縮放
+1.在檔案置底處新增如下js,在所要放置處帶入 dropcap 
+2.參考貝若國際中的課程詳情頁course_next
+<script>
+    function desc() {
+        console.log(123);  //檢查是否有執行，確認沒問題拿掉
+    var img = $(".dropcap").find("p").find("img");  //在dropcap 的下面的 p 標籤 的img 內 中
+
+    for (var i = 0; i < img.length; i++) {
+        // $(img[i]).css({"width": "auto", "height": "auto", "max-width" : "100%"});
+        $(img[i]).css({
+            "height": "auto",
+            "max-width": "100%"
+        });
+
+        let newNode = document.createElement("p");
+        img[i].parentNode.insertBefore(newNode, img[i]);
+        }
+    };
+    window.onload = function()
+    {
+        desc(); 
+    }
+</script>
+```
+
